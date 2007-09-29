@@ -1,6 +1,6 @@
 %define name 	multisync-gui
 %define version 0.91.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 		%{name}
 Version: 	%{version}
