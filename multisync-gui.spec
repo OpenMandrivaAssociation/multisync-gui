@@ -1,6 +1,6 @@
 %define name 	multisync-gui
 %define version 0.91.0
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name: 		%{name}
 Version: 	%{version}
@@ -19,7 +19,6 @@ BuildRequires:  libopensync-plugin-evolution2-devel
 BuildRequires:	libgnomeui2-devel libglade2.0-devel
 BuildRequires:	sqlite3-devel
 BuildRequires:  python
-BuildRequires:  desktop-file-utils
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
@@ -49,17 +48,18 @@ Comment=Calendar synchronization program
 Exec=multisync-gui
 Terminal=false
 Type=Application
-Encoding=UTF-8
-Categories=Application;System;
+Categories=TelephonyTools;Utility;
 Icon=multisync-gui
 EOF
 
-desktop-file-install \
-    --dir=%{buildroot}%{_datadir}/applications \
-    %{buildroot}%{_datadir}/applications/*
-  
 %clean
 rm -rf %{buildroot}
+
+%post
+%update_menus
+
+%postun
+%clean_menus
 
 %files
 %defattr(-,root,root)
