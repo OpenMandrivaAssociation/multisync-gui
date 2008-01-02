@@ -19,6 +19,7 @@ BuildRequires:  libopensync-plugin-evolution2-devel
 BuildRequires:	libgnomeui2-devel libglade2.0-devel
 BuildRequires:	sqlite3-devel
 BuildRequires:  python
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 MultiSync is a program to synchronize calendars, addressbooks and other PIM
