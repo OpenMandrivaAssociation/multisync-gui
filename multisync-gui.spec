@@ -66,10 +66,10 @@ rm -f %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 # icons
 mkdir -p %{buildroot}%{_iconsdir}/hicolor/{64x64,48x48,32x32,16x16}/apps
-install -m 0644 misc/%{name}.png %{buildroot}%{_iconsdir}/hicolor/64x64/apps/%{name}.png
-convert -scale 48 misc/%{name}.png %{buildroot}%{_iconsdir}/hicolor/48x48/apps/%{name}.png
-convert -scale 32 misc/%{name}.png %{buildroot}%{_iconsdir}/hicolor/32x32/apps/%{name}.png
-convert -scale 16 misc/%{name}.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/%{name}.png
+install -m 0644 misc/multisync.png %{buildroot}%{_iconsdir}/hicolor/64x64/apps/%{name}.png
+convert -scale 48 misc/multisync.png %{buildroot}%{_iconsdir}/hicolor/48x48/apps/%{name}.png
+convert -scale 32 misc/multisync.png %{buildroot}%{_iconsdir}/hicolor/32x32/apps/%{name}.png
+convert -scale 16 misc/multisync.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/%{name}.png
 
 %clean
 rm -rf %{buildroot}
