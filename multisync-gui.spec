@@ -74,11 +74,15 @@ convert -scale 16 misc/multisync.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps
 %clean
 rm -rf %{buildroot}
 
+%if %mdkversion < 200900
 %post
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
+%endif
 
 %files
 %defattr(-,root,root)
