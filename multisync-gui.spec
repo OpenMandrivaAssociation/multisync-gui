@@ -5,7 +5,7 @@
 %define distname	%name-%svn.tar.lzma
 %define dirname		%name
 %else
-%define release		%mkrel 1
+%define release		%mkrel 3
 %define distname	%name-%version.tar.bz2
 %define dirname		%name-%version
 %endif
