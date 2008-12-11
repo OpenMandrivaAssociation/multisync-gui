@@ -24,7 +24,7 @@ BuildRequires:	libgnomeui2-devel
 BuildRequires:	libglade2.0-devel
 BuildRequires:	sqlite3-devel
 BuildRequires:	python
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 Requires(post):		desktop-file-utils
