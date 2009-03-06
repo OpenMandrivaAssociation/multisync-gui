@@ -1,7 +1,7 @@
 # svn co http://svn.opensync.org/multisync/branches/multisync-gui-0.2X multisync-gui
 %define svn	308
 %if %svn
-%define release		%mkrel 0.%svn.1
+%define release		%mkrel 0.%svn.2
 %define distname	%name-%svn.tar.lzma
 %define dirname		%name
 %else
