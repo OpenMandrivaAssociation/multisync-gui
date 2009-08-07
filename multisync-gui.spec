@@ -1,9 +1,9 @@
 # svn co http://svn.opensync.org/multisync/branches/multisync-gui-0.2X multisync-gui
-%define svn	308
+%define svn	384
 %if %svn
-%define release		%mkrel 0.%svn.2
-%define distname	%name-%svn.tar.lzma
-%define dirname		%name
+%define release		%mkrel 0.%svn.1
+%define distname	%name-svn%svn.tar.lzma
+%define dirname		%name-0.2X
 %else
 %define release		%mkrel 3
 %define distname	%name-%version.tar.bz2
@@ -15,7 +15,7 @@ Version: 	0.91.1
 Release: 	%{release}
 Summary: 	Graphical front end to OpenSync synchronization system
 URL:		http://www.opensync.org
-License:	GPL+
+License:	GPLv2+
 Group:		Communications
 Source0:	%{distname}
 BuildRequires:	libxml2-devel
