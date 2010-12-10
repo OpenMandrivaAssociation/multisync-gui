@@ -1,11 +1,11 @@
 # svn co http://svn.opensync.org/multisync/branches/multisync-gui-0.2X multisync-gui
 %define svn	384
 %if %svn
-%define release		%mkrel 0.%svn.1
+%define release		%mkrel 0.%svn.2
 %define distname	%name-svn%svn.tar.lzma
 %define dirname		%name-0.2X
 %else
-%define release		%mkrel 3
+%define release		%mkrel 4
 %define distname	%name-%version.tar.bz2
 %define dirname		%name-%version
 %endif
