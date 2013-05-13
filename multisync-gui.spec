@@ -18,9 +18,9 @@ URL:		http://www.opensync.org
 License:	GPLv2+
 Group:		Communications
 Source0:	%{distname}
-BuildRequires:	libxml2-devel
-BuildRequires:	libopensync-devel < 0.30
-BuildRequires:	libgnomeui2-devel
+BuildRequires:	pkgconfig(libxml-2.0)
+BuildRequires:	pkgconfig(opensync-1.0) < 0.30
+BuildRequires:	pkgconfig(libgnomeui-2.0)
 BuildRequires:	libglade2.0-devel
 BuildRequires:	sqlite3-devel
 BuildRequires:	python
