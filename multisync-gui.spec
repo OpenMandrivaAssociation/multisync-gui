@@ -5,7 +5,7 @@
 %define distname	%name-svn%svn.tar.lzma
 %define dirname		%name-0.2X
 %else
-%define release		%mkrel 4
+%define release 		5
 %define distname	%name-%version.tar.bz2
 %define dirname		%name-%version
 %endif
@@ -25,7 +25,6 @@ BuildRequires:	libglade2.0-devel
 BuildRequires:	sqlite3-devel
 BuildRequires:	python
 BuildRequires:	imagemagick
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 Requires(post):		desktop-file-utils
 Requires(postun):	desktop-file-utils
