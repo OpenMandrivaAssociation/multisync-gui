@@ -10,7 +10,7 @@ Version:	0.91.1
 Release:	0.%{svn}.4
 License:	GPLv2+
 Group:		Communications
-Url:		http://www.opensync.org
+Url:		https://www.opensync.org
 Source0:	%{name}-svn%{svn}.tar.bz2
 BuildRequires:	imagemagick
 BuildRequires:	python
